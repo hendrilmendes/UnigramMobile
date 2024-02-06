@@ -1,0 +1,301 @@
+﻿<Page
+    x:Class="Unigram.Views.DialogSharedMediaPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Unigram.Views"
+    xmlns:common="using:Unigram.Common"
+    xmlns:items="using:Unigram.Controls.Items"
+    xmlns:controls ="using:Unigram.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="PivotItem">
+            <Setter Property="Margin" Value="0"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="ContentRoot" BorderBrush="{ThemeResource SystemControlForegroundBaseLowBrush}" Grid.RowSpan="2">
+            <Pivot x:Name="ScrollingHost" Style="{StaticResource TabStylePivotStyle}">
+                <PivotItem>
+                    <PivotItem.Header>
+                        <controls:TabHeaderStyle Glyph="&#xE114;" />
+                    </PivotItem.Header>
+                    <GridView x:Name="ScrollingMedia"
+                              ItemsSource="{Binding MediaCollection}"
+                              SelectionMode="None"
+                              Padding="6,0,6,6"
+                              common:FluidGridView.OrientationOnly="False">
+                        <common:FluidGridView.Triggers>
+                            <common:LengthGridViewTrigger ItemLength="72"/>
+                        </common:FluidGridView.Triggers>
+                        <GridView.ItemContainerStyle>
+                            <Style TargetType="GridViewItem">
+                                <Setter Property="Margin" Value="6"/>
+                                <Setter Property="Padding" Value="0"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </GridView.ItemContainerStyle>
+                        <GridView.Header>
+                            <controls:SearchTextBox Text="{Binding Media.Query, Mode=TwoWay}" PlaceholderText="Search..." Margin="6,8" InputScope="Search"/>
+                        </GridView.Header>
+                        <GridView.Footer>
+                            <Border Height="6"/>
+                        </GridView.Footer>
+                        <GridView.GroupStyle>
+                            <GroupStyle>
+                                <GroupStyle.HeaderContainerStyle>
+                                    <Style TargetType="GridViewHeaderItem">
+                                        <Setter Property="Background" Value="{ThemeResource SystemControlBackgroundAltMediumHighBrush}" />
+                                        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                                        <Setter Property="FontSize" Value="{ThemeResource ListViewHeaderItemThemeFontSize}" />
+                                        <Setter Property="Margin" Value="0,0,0,0"/>
+                                        <Setter Property="Padding" Value="6,8,6,9"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                        <Setter Property="VerticalContentAlignment" Value="Top" />
+                                        <Setter Property="MinHeight" Value="0"/>
+                                        <Setter Property="UseSystemFocusVisuals" Value="True" />
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="GridViewHeaderItem">
+                                                    <Border Background="{TemplateBinding Background}"
+                                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                                            BorderThickness="{TemplateBinding BorderThickness}">
+                                                        <ContentPresenter x:Name="ContentPresenter"
+                                                                          Margin="{TemplateBinding Padding}"
+                                                                          Content="{TemplateBinding Content}"
+                                                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                                                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </GroupStyle.HeaderContainerStyle>
+                                <GroupStyle.HeaderTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding Key, Converter={StaticResource DateTimeToFormatConverter}, ConverterParameter='unigram.monthgrouping'}" Style="{StaticResource BaseTextBlockStyle}"/>
+                                            <TextBlock Style="{ThemeResource CaptionTextBlockStyle}"
+                                                       Foreground="{ThemeResource SystemControlForegroundChromeDisabledLowBrush}"
+                                                       VerticalAlignment="Bottom"
+                                                       Margin="0,0,0,1"
+                                                       Grid.Column="1">
+                                                <Run Text="{Binding Count}"/>
+                                                <Run Text="files"/>
+                                            </TextBlock>
+                                        </Grid>
+                                    </DataTemplate>
+                                </GroupStyle.HeaderTemplate>
+                            </GroupStyle>
+                        </GridView.GroupStyle>
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                                    <Image/>
+                                </Border>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </PivotItem>
+                <PivotItem>
+                    <PivotItem.Header>
+                        <controls:TabHeaderStyle Glyph="&#xE8C8;" />
+                    </PivotItem.Header>
+                    <ListView x:Name="ScrollingFiles"
+                              ItemsSource="{Binding FilesCollection}"
+                              SelectionMode="None">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.Header>
+                            <controls:SearchTextBox Text="{Binding Files.Query, Mode=TwoWay}" PlaceholderText="Search..." Margin="12,8" InputScope="Search"/>
+                        </ListView.Header>
+                        <ListView.Footer>
+                            <Border Height="6"/>
+                        </ListView.Footer>
+                        <ListView.GroupStyle>
+                            <GroupStyle>
+                                <GroupStyle.HeaderContainerStyle>
+                                    <Style TargetType="ListViewHeaderItem">
+                                        <Setter Property="Background" Value="{ThemeResource SystemControlBackgroundAltMediumHighBrush}" />
+                                        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                                        <Setter Property="FontSize" Value="{ThemeResource ListViewHeaderItemThemeFontSize}" />
+                                        <Setter Property="Margin" Value="0,0,0,0"/>
+                                        <Setter Property="Padding" Value="12,8,12,9"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                        <Setter Property="VerticalContentAlignment" Value="Top" />
+                                        <Setter Property="MinHeight" Value="0"/>
+                                        <Setter Property="UseSystemFocusVisuals" Value="True" />
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ListViewHeaderItem">
+                                                    <Border Background="{TemplateBinding Background}"
+                                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                                            BorderThickness="{TemplateBinding BorderThickness}">
+                                                        <ContentPresenter x:Name="ContentPresenter"
+                                                                          Margin="{TemplateBinding Padding}"
+                                                                          Content="{TemplateBinding Content}"
+                                                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                                          ContentTransitions="{TemplateBinding ContentTransitions}"
+                                                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </GroupStyle.HeaderContainerStyle>
+                                <GroupStyle.HeaderTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding Key, Converter={StaticResource DateTimeToFormatConverter}, ConverterParameter='unigram.monthgrouping'}" Style="{StaticResource BaseTextBlockStyle}"/>
+                                            <TextBlock Style="{ThemeResource CaptionTextBlockStyle}"
+                                                       Foreground="{ThemeResource SystemControlForegroundChromeDisabledLowBrush}"
+                                                       VerticalAlignment="Bottom"
+                                                       Margin="0,0,0,1"
+                                                       Grid.Column="1">
+                                                <Run Text="{Binding Count}"/>
+                                                <Run Text="files"/>
+                                            </TextBlock>
+                                        </Grid>
+                                    </DataTemplate>
+                                </GroupStyle.HeaderTemplate>
+                            </GroupStyle>
+                        </ListView.GroupStyle>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <items:SharedFileListViewItem/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </PivotItem>
+                <PivotItem>
+                    <PivotItem.Header>
+                        <controls:TabHeaderStyle Glyph="&#xE71B;" />
+                    </PivotItem.Header>
+                    <ListView x:Name="lbLinks" HorizontalContentAlignment="Stretch" Margin="0,15,0,0" SelectionMode="None">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <!-- Chat Info -->
+                        <Grid x:Name="gridLinkInfo"
+                              RelativePanel.AlignVerticalCenterWithPanel="True"
+                              RelativePanel.AlignLeftWithPanel="True">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock x:Name="tblLinkSenderName"
+                                       Grid.Column="0"
+                                       Grid.Row="0"
+                                       Grid.ColumnSpan="2"
+                                       Text="Superman"
+                                       TextWrapping="NoWrap"
+                                       FontWeight="SemiBold"
+                                       FontSize="20"
+                                       Margin="0,4"
+                                       VerticalAlignment="Center" />
+                            <TextBlock x:Name="tblLinkSentTime"
+                                       Grid.Column="2"
+                                       Grid.Row="0"
+                                       Text="10:11 pm"
+                                       Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"
+                                       Margin="8,6,0,6"
+                                       HorizontalAlignment="Right"
+                                       FontSize="14"/>
+                            <RelativePanel x:Name="rpLinkInfoData"
+                                           Grid.Row="1"
+                                           Grid.ColumnSpan="3">
+                                <TextBlock x:Name="tblLinkTitle" Foreground="{ThemeResource SystemControlBackgroundAccentBrush}"
+                                           Text="MSPoweruser - Unigram for UWP"
+                                           TextTrimming="WordEllipsis"
+                                           FontSize="18"
+                                           FontWeight="SemiBold"
+                                           VerticalAlignment="Center"
+                                           RelativePanel.AlignLeftWithPanel="True"
+                                           TextWrapping="WrapWholeWords"/>
+                                <HyperlinkButton x:Name="tblLinkName" Content="www.mspoweruser.com" NavigateUri="http://www.mspoweruser.com" Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"
+                                                 FontSize="16"
+                                                 Margin="0,0,0,4"
+                                                 VerticalAlignment="Center"
+                                                 RelativePanel.AlignLeftWithPanel="True"
+                                                 RelativePanel.Below="tblLinkTitle"/>
+                                <TextBlock x:Name="tblLinkDes"
+                                           Text="Lorem ipsum dolor sit amet, et consul adipiscing vix, ei vis tamquam propriae accommodare, meis patrioque duo ei. Qui tibique corrumpit eu, cu vel esse laoreet. In duo diam soleat facilisis, aliquid legimus et vis. At nullam iracundia vix. Vis ex legere adipisci assentior, eam cu illud dolorum, volutpat torquatos cu nec."
+                                           Foreground="{ThemeResource SystemControlForegroundBaseMediumBrush}"
+                                           TextTrimming="WordEllipsis"
+                                           FontSize="16"
+                                           Margin="0,0,0,4"
+                                           VerticalAlignment="Center"
+                                           RelativePanel.AlignLeftWithPanel="True"
+                                           RelativePanel.Below="tblLinkName" TextWrapping="WrapWholeWords"/>
+
+                            </RelativePanel>
+                        </Grid>
+                        <!-- End of one element -->
+                    </ListView>
+                </PivotItem>
+                <PivotItem>
+                    <PivotItem.Header>
+                        <controls:TabHeaderStyle Glyph="&#xE189;" />
+                    </PivotItem.Header>
+                    <ListView x:Name="ScrollingMusic"
+                              ItemsSource="{Binding MusicCollection}"
+                              SelectionMode="None">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.Header>
+                            <controls:SearchTextBox Text="{Binding Music.Query, Mode=TwoWay}" PlaceholderText="Search..." Margin="12,8" InputScope="Search"/>
+                        </ListView.Header>
+                        <ListView.Footer>
+                            <Border Height="6"/>
+                        </ListView.Footer>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <items:SharedFileListViewItem/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </PivotItem>
+            </Pivot>
+        </Border>
+        <Border Height="{ThemeResource AppBarThemeCompactHeight}" Padding="12,0">
+            <TextBlock Text="SHARED MEDIA"
+                       Foreground="{ThemeResource ButtonForegroundThemeBrush}"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Style="{StaticResource BaseTextBlockStyle}"/>
+        </Border>
+    </Grid>
+</Page>
