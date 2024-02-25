@@ -122,43 +122,43 @@
     <comment>About - App info - App Name</comment>
   </data>
   <data name="About-App-Version.Text" xml:space="preserve">
-    <value>Version</value>
+    <value>Versão</value>
     <comment>About - App info - App version</comment>
   </data>
   <data name="About-Thanks-People.Text" xml:space="preserve">
-    <value>A lot of awesome people</value>
+    <value>Muitas pessoas incríveis</value>
     <comment>About - Thanks - People</comment>
   </data>
   <data name="About-Thanks-Title.Text" xml:space="preserve">
-    <value>Special thanks</value>
+    <value>Obrigado especial</value>
     <comment>About - Thanks - Section Title</comment>
   </data>
   <data name="About-Titlebar-Title.Text" xml:space="preserve">
-    <value>ABOUT</value>
+    <value>SOBRE</value>
     <comment>About - Titlebar - Page Title</comment>
   </data>
   <data name="About-Thanks-Intro.Text" xml:space="preserve">
-    <value>Thank you for using Unigram! We woudn't have been able to get this far without all help of the community.</value>
+    <value>Obrigado por usar o Unigram! Não teríamos conseguido chegar até aqui sem toda a ajuda da comunidade.</value>
     <comment>About - Thanks - Intro</comment>
   </data>
   <data name="CBTN-About.Label" xml:space="preserve">
-    <value>About</value>
+    <value>Sobre</value>
     <comment>AppBarButton - Label - About</comment>
   </data>
   <data name="CBTN-Filter.Label" xml:space="preserve">
-    <value>Filter</value>
+    <value>Filtrar</value>
     <comment>AppBarButton - Label - Filter</comment>
   </data>
   <data name="CBTN-NewChat.Label" xml:space="preserve">
-    <value>New chat</value>
+    <value>Nova Conversa</value>
     <comment>AppBarButton - Label - New Chat</comment>
   </data>
   <data name="CBTN-Select.Label" xml:space="preserve">
-    <value>Select</value>
+    <value>Selecionar</value>
     <comment>AppBarButton - Label - Select chats</comment>
   </data>
   <data name="CBTN-Settings.Label" xml:space="preserve">
-    <value>Settings</value>
+    <value>Configurações</value>
     <comment>AppBarButton - Label - Settings</comment>
   </data>
   <data name="Home-Titlebar-Title.Text" xml:space="preserve">
@@ -166,151 +166,151 @@
     <comment>Home - Titlebar - Page Title</comment>
   </data>
   <data name="Login-Titlebar-Title.Text" xml:space="preserve">
-    <value>WELCOME TO UNIGRAM</value>
+    <value>BEM VINDO AO UNIGRAM</value>
     <comment>Login - Titlebar - Page Title</comment>
   </data>
   <data name="Settings-Settings-LocationPermission.Header" xml:space="preserve">
-    <value>Let Unigram use your location</value>
+    <value>Deixe o Unigram usar sua localização</value>
     <comment>Settings - Settings - ToggleSwitch - Permission for Location </comment>
   </data>
   <data name="Settings-Settings-SyncPeopleHub.Header" xml:space="preserve">
-    <value>Sync with People Hub</value>
+    <value>Sincronizar com o People Hub</value>
     <comment>Settings - Settings - ToggleSwitch - Sync with People Hub</comment>
   </data>
   <data name="Settings-Titlebar-Title.Text" xml:space="preserve">
-    <value>SETTINGS</value>
+    <value>CONFIGURAÇÕES</value>
     <comment>Settings - Titlebar - Page Title</comment>
   </data>
   <data name="BTN-CodeNotRecieved.Content" xml:space="preserve">
-    <value>I have not received a code</value>
+    <value>Não recebi o código</value>
     <comment>Button - Login</comment>
   </data>
   <data name="BTN-Next.Content" xml:space="preserve">
-    <value>Next</value>
+    <value>Próximo</value>
     <comment>Button - Next</comment>
   </data>
   <data name="Login-Code-Code.Header" xml:space="preserve">
-    <value>Enter your code:</value>
+    <value>Insira o código:</value>
     <comment>Login - Code - Code Input - Header</comment>
   </data>
   <data name="Login-Code-Code.PlaceholderText" xml:space="preserve">
-    <value>Enter your code here...</value>
+    <value>Coloque o código aqui...</value>
     <comment>Login - Code - Code Input - Placeholder Text</comment>
   </data>
   <data name="Login-Code-Intro.Text" xml:space="preserve">
-    <value>We've sent you a message with the code.</value>
+    <value>Enviamos uma mensagem para você com o código.</value>
     <comment>Login - Code - Intro</comment>
   </data>
   <data name="Login-Code-Title.Text" xml:space="preserve">
-    <value>Your code</value>
+    <value>Seu código</value>
     <comment>Login - Code - Title</comment>
   </data>
   <data name="Login-Intro-Intro.Text" xml:space="preserve">
-    <value>Unigram is an UWP Telegram-app build by the Windows Community, for the Windows community</value>
+    <value>Unigram é um aplicativo UWP Telegram desenvolvido pela Comunidade Windows, para a Comunidade Windows</value>
     <comment>Login - App Intro - Intro Text</comment>
   </data>
   <data name="Login-PhoneNumber-Country.Header" xml:space="preserve">
-    <value>Country:</value>
+    <value>País:</value>
     <comment>Login - Phone Number - Country - Header</comment>
   </data>
   <data name="Login-PhoneNumber-Country.PlaceholderText" xml:space="preserve">
-    <value>Select your country...</value>
+    <value>Escolha o seu país...</value>
     <comment>Login - Phone Number - Country - Placeholder Text</comment>
   </data>
   <data name="Login-PhoneNumber-Intro.Text" xml:space="preserve">
-    <value>Please select the country you live in and enter your phone number</value>
+    <value>Selecione o país em que você mora e digite seu número de telefone</value>
     <comment>Login - Phone Number - Intro</comment>
   </data>
   <data name="Login-PhoneNumber-PhoneNumber.Header" xml:space="preserve">
-    <value>Phone number</value>
+    <value>Número de telefone</value>
     <comment>Login - Phone Number - Phone Number - Header</comment>
   </data>
   <data name="Login-PhoneNumber-PhoneNumber.PlaceholderText" xml:space="preserve">
-    <value>What is your phone number?</value>
+    <value>Qual é o seu número de telefone?</value>
     <comment>Login - Phone Number - Phone Number - Placeholder Text</comment>
   </data>
   <data name="Login-PhoneNumber-Title.Text" xml:space="preserve">
-    <value>Your phone number</value>
+    <value>Seu número de telefone</value>
     <comment>Login - Phone Number - Title</comment>
   </data>
   <data name="Settings-Settings-ChatSettings-Title.Text" xml:space="preserve">
-    <value>Chat settings</value>
+    <value>Configurações de Chat</value>
     <comment>Settings - Settings - Chat settings - Title</comment>
   </data>
   <data name="Settings-Settings-NotificationsSounds-Title.Text" xml:space="preserve">
-    <value>Notifications and Sounds</value>
+    <value>Notificações e Sons</value>
     <comment>Settings - Settings - Notifications &amp; Sounds - Title</comment>
   </data>
   <data name="Settings-Settings-PrivacySecurity-Title.Text" xml:space="preserve">
-    <value>Privacy and Security</value>
+    <value>Privacidade e Segurança</value>
     <comment>Settings - Settings - Privacy &amp; Security - Title</comment>
   </data>
   <data name="Notifications-Toast-Reply.Text" xml:space="preserve">
-    <value>Type your reply here...</value>
+    <value>Digite sua resposta aqui...</value>
     <comment>Toast notification reply placeholder</comment>
   </data>
   <data name="CBTN-Edit.Label" xml:space="preserve">
-    <value>Edit</value>
+    <value>Editar</value>
     <comment>AppBarButton - Label-  Edit</comment>
   </data>
   <data name="CBTN-SendMessage.Label" xml:space="preserve">
-    <value>Send message</value>
+    <value>Enviar mensagem</value>
     <comment>AppBarButton - Label - Send message</comment>
   </data>
   <data name="ChatInfo-Info-PivotTitle.Header" xml:space="preserve">
-    <value>Info</value>
+    <value>Informações</value>
     <comment>ChatInfo - Pivot Title - Info</comment>
   </data>
   <data name="ChatInfo-Media-PivotTitle.Header" xml:space="preserve">
-    <value>Shared media</value>
+    <value>Mídia compartilhada</value>
     <comment>ChatInfo - Pivot Title - Share Media</comment>
   </data>
   <data name="ChatInfo-Members-PivotTitle.Header" xml:space="preserve">
-    <value>Members</value>
+    <value>Membros</value>
     <comment>ChatInfo - Pivot Title - Members</comment>
   </data>
   <data name="ChatInfo-Options-ClearHistory-Title.Text" xml:space="preserve">
-    <value>Clear history</value>
+    <value>Apagar o histórico</value>
     <comment>ChatInfo - Options - Clear History - Title</comment>
   </data>
   <data name="ChatInfo-Options-Groups-ConvertToSupergroup.Content" xml:space="preserve">
-    <value>Convert to supergroup</value>
+    <value>Converter para supergrupo</value>
     <comment>ChatInfo - Options - Groups - Convert to Supergroup</comment>
   </data>
   <data name="ChatInfo-Options-DeleteChat-Title.Text" xml:space="preserve">
-    <value>Delete conversation</value>
+    <value>Apagar conversa</value>
     <comment>ChatInfo - Options - Delete chat</comment>
   </data>
   <data name="ChatInfo-Options-ExitChat-Title.Text" xml:space="preserve">
-    <value>Delete and exit chat</value>
+    <value>Excluir e sair da conversa</value>
     <comment>ChatInfo - Options - Delete and exit chat</comment>
   </data>
   <data name="ChatInfo-Options-Notifications.Header" xml:space="preserve">
-    <value>Show notifications from this chat</value>
+    <value>Mostrar notificações desta conversa</value>
     <comment>ChatInfo - Options - ToggleSwith - Notifications</comment>
   </data>
   <data name="ChatInfo-Options-PhoneNumber-Title.Text" xml:space="preserve">
-    <value>Call</value>
+    <value>Chamada</value>
     <comment>ChatInfo - Options - Phone Number - Title</comment>
   </data>
   <data name="ChatInfo-Options-Search-Title.Text" xml:space="preserve">
-    <value>Search for messages</value>
+    <value>Pesquisar mensagens</value>
     <comment>ChatInfo - Options - Search for Messages - Title</comment>
   </data>
   <data name="Settings-User-EditProfile.Content" xml:space="preserve">
-    <value>Tap to edit profile</value>
+    <value>Toque para editar o perfil</value>
     <comment>Settings - User - Edit Profile-button</comment>
   </data>
   <data name="CBTN-Attachment.Label" xml:space="preserve">
-    <value>Attachment</value>
+    <value>Anexo</value>
     <comment>AppBarButton - Label - Attachment</comment>
   </data>
   <data name="CBTN-Pin.Text" xml:space="preserve">
-    <value>Pin to Start</value>
+    <value>Fixar no início</value>
     <comment>AppBarButton - Label - Pin to Start</comment>
   </data>
   <data name="CBTN-ReportSpam.Text" xml:space="preserve">
-    <value>Report spam</value>
+    <value>Reportar spam</value>
     <comment>AppBarButton - Label - Report spam</comment>
   </data>
   <data name="CBTN-Stickers.Text" xml:space="preserve">
@@ -318,27 +318,27 @@
     <comment>AppBarButton - Label - Stickers</comment>
   </data>
   <data name="Chat-Input-Message.PlaceholderText" xml:space="preserve">
-    <value>Type your message...</value>
+    <value>Digite sua mensagem...</value>
     <comment>Chat - Input - Message - Placeholder Text</comment>
   </data>
   <data name="FCBTN-Camera.Text" xml:space="preserve">
-    <value>Camera</value>
+    <value>Câmera</value>
     <comment>MenuFlyoutButton - Text - Camera</comment>
   </data>
   <data name="FCBTN-Contact.Text" xml:space="preserve">
-    <value>Contact</value>
+    <value>Contato</value>
     <comment>MenuFlyoutButton - Text - Contact</comment>
   </data>
   <data name="FCBTN-File.Text" xml:space="preserve">
-    <value>File</value>
+    <value>Arquivo</value>
     <comment>MenuFlyoutButton - Text - File</comment>
   </data>
   <data name="FCBTN-Location.Text" xml:space="preserve">
-    <value>Location</value>
+    <value>Localização</value>
     <comment>MenuFlyoutButton - Text - Location</comment>
   </data>
   <data name="FCBTN-Photo.Text" xml:space="preserve">
-    <value>Photo</value>
+    <value>Foto</value>
     <comment>MenuFlyoutButton - Text - Photo</comment>
   </data>
   <data name="FCBTN-Video.Text" xml:space="preserve">
@@ -346,285 +346,285 @@
     <comment>MenuFlyoutButton - Text - Video</comment>
   </data>
   <data name="ChatInfo-Info-ViewMembers.Content" xml:space="preserve">
-    <value>View memebers</value>
+    <value>Ver membros</value>
     <comment>ChatInfo - Info - Show group members</comment>
   </data>
   <data name="ChatInfo-Options-Groups-InviteLine-Title.Text" xml:space="preserve">
-    <value>Invite link</value>
+    <value>Link de convite</value>
     <comment>ChatInfo - Options - Groups - Invite link - Title</comment>
   </data>
   <data name="ChatInfo-Options-Groups-InviteLink.Content" xml:space="preserve">
-    <value>Invite link</value>
+    <value>Link de convite</value>
     <comment>ChatInfo - Options - Groups - Invite Link</comment>
   </data>
   <data name="ChatInfo-Options-Groups-ManageAdmins.Content" xml:space="preserve">
-    <value>Manage admins</value>
+    <value>Gerenciar administradores</value>
     <comment>ChatInfo - Options - Groups - Manage administrators</comment>
   </data>
   <data name="ChatInfo-Options-Groups-RevokeLink.Content" xml:space="preserve">
-    <value>Revoke invite link</value>
+    <value>Revogar link de convite</value>
     <comment>ChatInfo - Options - Groups - Revoke invite link</comment>
   </data>
   <data name="ChatInfo-Options-Groups-Title.Text" xml:space="preserve">
-    <value>Group management</value>
+    <value>Gerenciamento de grupo</value>
     <comment>ChatInfo - Options - Groups - Title</comment>
   </data>
   <data name="ChatInfo-Options-NotificationsText.Text" xml:space="preserve">
-    <value>Notifications</value>
+    <value>Notificações</value>
     <comment>ChatInfo - Options - ToggleSwith - Notifications - Text</comment>
   </data>
   <data name="ChatInfo-Options-SharedMedia-Title.Text" xml:space="preserve">
-    <value>Shared media</value>
+    <value>Mídia compartilhada</value>
     <comment>ChatInfo - Options - Share Media - Title</comment>
   </data>
   <data name="CBTN-AddAdmin.Label" xml:space="preserve">
-    <value>Add admin</value>
+    <value>Adicionar administrador</value>
     <comment>AppBarButton - Add administrator</comment>
   </data>
   <data name="DialogPage-Info-Admin-AddMembers-AdminOnly.Content" xml:space="preserve">
-    <value>Only admins</value>
+    <value>Somente administradores</value>
     <comment>DialogInfo - Admins - Add Members - Admins only</comment>
   </data>
   <data name="DialogPage-Info-Admin-AddMembers-All.Content" xml:space="preserve">
-    <value>All members</value>
+    <value>Todos os membros</value>
     <comment>DialogInfo - Admins - Add Members - All members</comment>
   </data>
   <data name="DialogPage-Info-Admin-AddMembers.Header" xml:space="preserve">
-    <value>Who can add new members?</value>
+    <value>Quem pode adicionar novos membros?</value>
     <comment>DialogInfo - Admins - Add Members - Header</comment>
   </data>
   <data name="DialogPage-Info-Admin-Description.Text" xml:space="preserve">
-    <value>You can add admins to help you manage you group. Tap and hold or right click to remove admins.</value>
+    <value>Você pode adicionar administradores para ajudá-lo a gerenciar seu grupo. Toque e segure ou clique com o botão direito para remover administradores.</value>
     <comment>DialogInfo - Admins - Description</comment>
   </data>
   <data name="DialogPage-Info-Admin-Titlebar.Title" xml:space="preserve">
-    <value>ADMINS</value>
+    <value>ADMINISTRADORES</value>
     <comment>DialogInfo - Admins - Page Title</comment>
   </data>
   <data name="FBTN-Delete.Text" xml:space="preserve">
-    <value>Delete</value>
+    <value>Apagar</value>
     <comment>MenuFlyoutButton - Delete</comment>
   </data>
   <data name="CBTN-Cancel.Label" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
     <comment>AppBarButton - Label - Cancel</comment>
   </data>
   <data name="CBTN-DeleteSelected.Label" xml:space="preserve">
-    <value>Delete selected chats</value>
+    <value>Excluir conversar selecionadas</value>
     <comment>AppBarButton - Label - Delete selected chats</comment>
   </data>
   <data name="CBTN-MuteSelected.Label" xml:space="preserve">
-    <value>Mute selected chats</value>
+    <value>Silenciar conversas selecionadas</value>
     <comment>AppBarButton - Label - Mute selected chats</comment>
   </data>
   <data name="CBTN-BackgroundImage.Text" xml:space="preserve">
-    <value>Change Background Image TST</value>
+    <value>Alterar TST da imagem de fundo</value>
     <comment>AppBarButton - Label - Search</comment>
   </data>
   <data name="CBTN-Search.Text" xml:space="preserve">
-    <value>Search</value>
+    <value>Pesquisar</value>
     <comment>AppBarButton - Label - Search</comment>
   </data>
   <data name="MessageActionBroadcastCreate" xml:space="preserve">
-    <value>{0} created the broadcast "{1}"</value>
+    <value>{0} criou uma transmissão "{1}"</value>
   </data>
   <data name="MessageActionChannelCreate" xml:space="preserve">
-    <value>Channel created</value>
+    <value>Canal criado</value>
   </data>
   <data name="MessageActionChannelDeletePhoto" xml:space="preserve">
-    <value>Channel photo removed</value>
+    <value>Foto do canal removida</value>
   </data>
   <data name="MessageActionChannelEditPhoto" xml:space="preserve">
-    <value>Channel photo updated</value>
+    <value>Foto do canal atualizada</value>
   </data>
   <data name="MessageActionChannelEditTitle" xml:space="preserve">
-    <value>Channel name changed to "{0}"</value>
+    <value>Nome do canal alterado para "{0}"</value>
   </data>
   <data name="MessageActionChannelMigrateFrom" xml:space="preserve">
-    <value>This group was upgraded to a supergroup.</value>
+    <value>Este grupo foi atualizado para um supergrupo.</value>
   </data>
   <data name="MessageActionChatActivate" xml:space="preserve">
-    <value>Chat was activated</value>
+    <value>O chat foi ativado</value>
   </data>
   <data name="MessageActionChatAddSelf" xml:space="preserve">
-    <value>{0} joined the group</value>
+    <value>{0} entrou no grupo</value>
   </data>
   <data name="MessageActionChatAddUser" xml:space="preserve">
-    <value>{0} added {1}</value>
+    <value>{0} adicionado {1}</value>
   </data>
   <data name="MessageActionChatCreate" xml:space="preserve">
-    <value>{0} created the group "{1}"</value>
+    <value>{0} criou o grupo "{1}"</value>
   </data>
   <data name="MessageActionChatDeactivate" xml:space="preserve">
-    <value>Chat was deactivated</value>
+    <value>O chat foi desativado</value>
   </data>
   <data name="MessageActionChatDeletePhoto" xml:space="preserve">
-    <value>{0} removed group photo</value>
+    <value>{0} foto do grupo removida</value>
   </data>
   <data name="MessageActionChatDeleteUser" xml:space="preserve">
-    <value>{0} removed {1}</value>
+    <value>{0} removido {1}</value>
   </data>
   <data name="MessageActionChatEditPhoto" xml:space="preserve">
-    <value>{0} updated group photo</value>
+    <value>{0} foto do grupo atualizada</value>
   </data>
   <data name="MessageActionChatEditTitle" xml:space="preserve">
-    <value>{0} changed group name to "{1}"</value>
+    <value>{0} mudou o nome do grupo para "{1}"</value>
   </data>
   <data name="MessageActionChatJoin" xml:space="preserve">
-    <value>{0} joined the group</value>
+    <value>{0} entrou no grupo</value>
   </data>
   <data name="MessageActionChatJoinedByLink" xml:space="preserve">
-    <value>{0} joined the group via invite link</value>
+    <value>{0} entrou no grupo através do link de convite</value>
   </data>
   <data name="MessageActionChatJoinSelf" xml:space="preserve">
-    <value>You joined the group</value>
+    <value>Você entrou no grupo</value>
   </data>
   <data name="MessageActionChatMigrateTo" xml:space="preserve">
-    <value>Chat migrated to channel "{0}"</value>
+    <value>Chat migrado para canal "{0}"</value>
   </data>
   <data name="MessageActionDisableMessageTTL" xml:space="preserve">
-    <value>{0} disabled the self-destruct timer</value>
+    <value>{0} desativou o temporizador de autodestruição</value>
   </data>
   <data name="MessageActionEmpty" xml:space="preserve">
-    <value>Empty service message</value>
+    <value>Mensagem de serviço vazia</value>
   </data>
   <data name="MessageActionLeftGroupSelf" xml:space="preserve">
-    <value>You left the group</value>
+    <value>Você saiu do grupo</value>
   </data>
   <data name="MessageActionPinContact" xml:space="preserve">
-    <value>{0} pinned a contact</value>
+    <value>{0} fixou um contato</value>
   </data>
   <data name="MessageActionPinFile" xml:space="preserve">
-    <value>{0} pinned a file</value>
+    <value>{0} fixou um arquivo</value>
   </data>
   <data name="MessageActionPinGame" xml:space="preserve">
-    <value>{0} pinned a game</value>
+    <value>{0} marcou um jogo</value>
   </data>
   <data name="MessageActionPinGif" xml:space="preserve">
-    <value>{0} pinned a GIF</value>
+    <value>{0} fixou um GIF</value>
   </data>
   <data name="MessageActionPinMap" xml:space="preserve">
-    <value>{0} pinned a map</value>
+    <value>{0} fixou um mapa</value>
   </data>
   <data name="MessageActionPinMessage" xml:space="preserve">
-    <value>{0} pinned a message</value>
+    <value>{0} fixou uma mensagem</value>
   </data>
   <data name="MessageActionPinPhoto" xml:space="preserve">
-    <value>{0} pinned a photo</value>
+    <value>{0} fixou uma foto</value>
   </data>
   <data name="MessageActionPinSticker" xml:space="preserve">
-    <value>{0} pinned a {1}sticker</value>
+    <value>{0} fixou um {1} sticker</value>
   </data>
   <data name="MessageActionPinText" xml:space="preserve">
-    <value>{0} pinned "{1}"</value>
+    <value>{0} fixado "{1}"</value>
   </data>
   <data name="MessageActionPinTrack" xml:space="preserve">
-    <value>{0} pinned a track</value>
+    <value>{0} fixou uma faixa</value>
   </data>
   <data name="MessageActionPinVideo" xml:space="preserve">
-    <value>{0} pinned a video</value>
+    <value>{0} fixou um vídeo</value>
   </data>
   <data name="MessageActionPinVoiceMessage" xml:space="preserve">
-    <value>{0} pinned a voice message</value>
+    <value>{0} fixou uma mensagem de voz</value>
   </data>
   <data name="MessageActionScreenshotMessages" xml:space="preserve">
-    <value>{0} took a screenshot!</value>
+    <value>{0} tirou um print!</value>
   </data>
   <data name="MessageActionSetMessageTTL" xml:space="preserve">
-    <value>{0} set the self-destruct timer to {1}</value>
+    <value>{0} defina o temporizador de autodestruição para {1}</value>
   </data>
   <data name="MessageActionUserLeftGroup" xml:space="preserve">
-    <value>{0} left the group</value>
+    <value>{0} deixou o grupo</value>
   </data>
   <data name="MessageActionYouDisableMessageTTL" xml:space="preserve">
-    <value>You disabled the self-destruct timer</value>
+    <value>Você desativou o temporizador de autodestruição</value>
   </data>
   <data name="MessageActionYouScreenshotMessages" xml:space="preserve">
-    <value>You took a screenshot!</value>
+    <value>Você tirou um print!</value>
   </data>
   <data name="MessageActionYouSetMessageTTL" xml:space="preserve">
-    <value>You set the self-destruct timer to {0}</value>
+    <value>Você definiu o temporizador de autodestruição para {0}</value>
   </data>
   <data name="UserScored" xml:space="preserve">
-    <value>{0} scored {1}</value>
+    <value>{0} marcou {1}</value>
   </data>
   <data name="UserScoredAtGame" xml:space="preserve">
-    <value>{0} scored {1} at {2}</value>
+    <value>{0} marcou {1} no {2}</value>
   </data>
   <data name="UserScoredAtGamePlural" xml:space="preserve">
-    <value>{0} scored {1} at {2}</value>
+    <value>{0} marcou {1} no {2}</value>
   </data>
   <data name="UserScoredPlural" xml:space="preserve">
-    <value>{0} scored {1}</value>
+    <value>{0} marcou {1}</value>
   </data>
   <data name="UserNominativePlural" xml:space="preserve">
-    <value>Users</value>
+    <value>Usuários</value>
   </data>
   <data name="UserNominativeSingular" xml:space="preserve">
-    <value>User</value>
+    <value>Usuário</value>
   </data>
   <data name="YourScored" xml:space="preserve">
-    <value>You scored {0}</value>
+    <value>Você marcou {0}</value>
   </data>
   <data name="YourScoredAtGame" xml:space="preserve">
-    <value>You scored {0} at {1}</value>
+    <value>Você marcou {0} no {1}</value>
   </data>
   <data name="YourScoredAtGamePlural" xml:space="preserve">
-    <value>You scored {0} at {1}</value>
+    <value>Você marcou {0} no {1}</value>
   </data>
   <data name="YourScoredPlural" xml:space="preserve">
-    <value>You scored {0}</value>
+    <value>Você marcou {0}</value>
   </data>
   <data name="AreTyping" xml:space="preserve">
-    <value>{0} are typing</value>
+    <value>{0} esta digitando</value>
   </data>
   <data name="IsPlayingGame" xml:space="preserve">
-    <value>{0} is playing a game</value>
+    <value>{0} está jogando um jogo</value>
   </data>
   <data name="IsRecordingAudio" xml:space="preserve">
-    <value>{0} is recording a voice message</value>
+    <value>{0} está gravando um áudio</value>
   </data>
   <data name="IsRecordingVideo" xml:space="preserve">
-    <value>{0} is recording a video</value>
+    <value>{0} está gravando um video</value>
   </data>
   <data name="IsSendingAudio" xml:space="preserve">
-    <value>{0} is sending a audio</value>
+    <value>{0} está enviando um áudio</value>
   </data>
   <data name="IsSendingFile" xml:space="preserve">
-    <value>{0} is sending a file</value>
+    <value>{0} está enviando um arquivo</value>
   </data>
   <data name="IsSendingPhoto" xml:space="preserve">
-    <value>{0} is sending a photo</value>
+    <value>{0} está enviando uma foto</value>
   </data>
   <data name="IsSendingVideo" xml:space="preserve">
-    <value>{0} is sending a video</value>
+    <value>{0} está enviando um vídeo</value>
   </data>
   <data name="IsTyping" xml:space="preserve">
-    <value>{0} is typing</value>
+    <value>{0} esta digitando</value>
   </data>
   <data name="PlayingGame" xml:space="preserve">
-    <value>Playing a game</value>
+    <value>Jogando um jogo</value>
   </data>
   <data name="RecordingVideo" xml:space="preserve">
-    <value>Recording a video</value>
+    <value>Gravando um vídeo</value>
   </data>
   <data name="RecordingVoiceMessage" xml:space="preserve">
-    <value>Recording a voice message</value>
+    <value>Gravando uma mensagem de voz</value>
   </data>
   <data name="SendingAudio" xml:space="preserve">
-    <value>Sending an audio</value>
+    <value>Enviando um áudio</value>
   </data>
   <data name="SendingFile" xml:space="preserve">
-    <value>Sending a file</value>
+    <value>Enviando um arquivo</value>
   </data>
   <data name="SendingPhoto" xml:space="preserve">
-    <value>Sending a photo</value>
+    <value>Enviando uma foto</value>
   </data>
   <data name="SendingVideo" xml:space="preserve">
-    <value>Sending a video</value>
+    <value>Enviando um vídeo</value>
   </data>
   <data name="Typing" xml:space="preserve">
-    <value>Typing</value>
+    <value>Digitando</value>
   </data>
   <data name="CompanyGenitivePlural" xml:space="preserve">
     <value />
@@ -633,34 +633,34 @@
     <value />
   </data>
   <data name="CompanyNominativePlural" xml:space="preserve">
-    <value>Members</value>
+    <value>Membros</value>
   </data>
   <data name="CompanyNominativeSingular" xml:space="preserve">
-    <value>Member</value>
+    <value>Membro</value>
   </data>
   <data name="CallMinutes_1" xml:space="preserve">
-    <value>{0} minute</value>
+    <value>{0} minuto</value>
   </data>
   <data name="CallMinutes_2" xml:space="preserve">
-    <value>{0} minutes</value>
+    <value>{0} minutos</value>
   </data>
   <data name="CallMinutes_3_10" xml:space="preserve">
-    <value>{0} minutes</value>
+    <value>{0} minutos</value>
   </data>
   <data name="CallMinutes_any" xml:space="preserve">
-    <value>{0} minutes</value>
+    <value>{0} minutos</value>
   </data>
   <data name="CallSeconds_1" xml:space="preserve">
-    <value>{0} second</value>
+    <value>{0} segundo</value>
   </data>
   <data name="CallSeconds_2" xml:space="preserve">
-    <value>{0} seconds</value>
+    <value>{0} segundos</value>
   </data>
   <data name="CallSeconds_3_10" xml:space="preserve">
-    <value>{0} seconds</value>
+    <value>{0} segundos</value>
   </data>
   <data name="CallSeconds_any" xml:space="preserve">
-    <value>{0} seconds</value>
+    <value>{0} segundos</value>
   </data>
   <data name="CallShortMinutes_1" xml:space="preserve">
     <value>{0} min</value>
@@ -675,28 +675,28 @@
     <value>{0} min</value>
   </data>
   <data name="CallShortSeconds_1" xml:space="preserve">
-    <value>{0} sec</value>
+    <value>{0} seg</value>
   </data>
   <data name="CallShortSeconds_2" xml:space="preserve">
-    <value>{0} sec</value>
+    <value>{0} seg</value>
   </data>
   <data name="CallShortSeconds_3_10" xml:space="preserve">
-    <value>{0} sec</value>
+    <value>{0} seg</value>
   </data>
   <data name="CallShortSeconds_any" xml:space="preserve">
-    <value>{0} sec</value>
+    <value>{0} seg</value>
   </data>
   <data name="CallCanceled" xml:space="preserve">
-    <value>Cancelled Call</value>
+    <value>Chamada Cancelada</value>
   </data>
   <data name="CallIncoming" xml:space="preserve">
-    <value>Incoming Call</value>
+    <value>Chamada Recebida</value>
   </data>
   <data name="CallMissed" xml:space="preserve">
-    <value>Missed Call</value>
+    <value>Chamada Perdida</value>
   </data>
   <data name="CallOutgoing" xml:space="preserve">
-    <value>Outgoing Call</value>
+    <value>Chamada Efetuada</value>
   </data>
   <data name="CallTimeFormat" xml:space="preserve">
     <value>{0} ({1})</value>
