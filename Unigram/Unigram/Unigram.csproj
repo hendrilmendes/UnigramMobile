@@ -489,6 +489,10 @@
       <LastGenOutput>Resources.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </PRIResource>
+    <PRIResource Include="Strings\pt-BR\Resources.resw">
+      <CustomToolNamespace>Unigram.Strings</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </PRIResource>
     <None Include="Unigram_StoreKey.pfx" />
     <None Include="Unigram_TemporaryKey.pfx" />
   </ItemGroup>
