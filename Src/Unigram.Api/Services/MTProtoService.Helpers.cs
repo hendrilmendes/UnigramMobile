@@ -230,8 +230,12 @@ namespace Telegram.Api.Services
 
                     SaveInitConnectionAsync(initConnection);
 
-                    // TODO?
-                    var withLayerN = new TLInvokeWithLayer { Query = initConnection, Layer = Constants.SupportedLayer };
+                    TLInvokeWithLayer withLayerN = new TLInvokeWithLayer 
+                    { 
+                        Query = initConnection, 
+                        Layer = Constants.SupportedLayer 
+                    };
+
                     data = withLayerN;
                     _activeTransport.Initiated = true;
                 }
@@ -253,7 +257,8 @@ namespace Telegram.Api.Services
             var salt = _activeTransport.Salt;
             var sessionId = _activeTransport.SessionId;
             var clientsTicksDelta = _activeTransport.ClientTicksDelta;
-            var transportMessage = CreateTLTransportMessage(salt ?? 0, sessionId ?? 0, sequenceNumber, messageId ?? 0, data);
+            var transportMessage = CreateTLTransportMessage(
+                salt ?? 0, sessionId ?? 0, sequenceNumber, messageId ?? 0, data);
             var encryptedMessage = CreateTLEncryptedMessage(authKey, transportMessage);
 
             //save items to history

@@ -352,16 +352,20 @@
                                   Background="{ThemeResource TelegramDialogUnreadBadgeBrush}"
                                   MinWidth="20"
                                   Height="20">
-                                <TextBlock Text="{x:Bind ViewModel.Stickers.FeaturedUnreadCount, Mode=OneWay}"
+
+                                <!-- TrimToCapHeight -->
+                                    <TextBlock Text="{x:Bind ViewModel.Stickers.FeaturedUnreadCount, Mode=OneWay}"
                                            Style="{ThemeResource CaptionTextBlockStyle}"
                                            Foreground="{ThemeResource TelegramDialogUnreadLabelBrush}"
                                            TextAlignment="Center"
                                            VerticalAlignment="Center"
-                                           TextLineBounds="TrimToBaseline,TrimToCapHeight"
+                                           TextLineBounds="TrimToBaseline"
                                            Margin="5,0,5,0"/>
                             </Grid>
                         </controls:PivotRadioButton>
-                        <controls:PivotRadioButton SelectedValue="{x:Bind Pivot.SelectedIndex, Mode=TwoWay}" Index="2" Glyph="&#xE121;" Visibility="Collapsed"/>
+                        <controls:PivotRadioButton SelectedValue="{x:Bind Pivot.SelectedIndex, Mode=TwoWay}" 
+                                                   Index="2" Glyph="&#xE121;" 
+                                                   Visibility="Collapsed"/>
                     </StackPanel>
                 </ListView.Header>
                 <ListView.Footer>

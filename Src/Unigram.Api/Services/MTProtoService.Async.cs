@@ -41,7 +41,8 @@ namespace Telegram.Api.Services
         }
 
         [DebuggerStepThrough]
-        public Task<MTProtoResponse<TLAuthSentCode>> SendCodeAsync(string phoneNumber, bool? currentNumber, Action<int> attemptFailed = null)
+        public Task<MTProtoResponse<TLAuthSentCode>> SendCodeAsync(string phoneNumber, bool? currentNumber, 
+            Action<int> attemptFailed = null)
         {
             var tsc = new TaskCompletionSource<MTProtoResponse<TLAuthSentCode>>();
             SendCodeCallback(phoneNumber, currentNumber, (callback) =>

@@ -155,13 +155,18 @@ namespace Unigram
             var cacheService = UnigramContainer.Current.ResolveType<ICacheService>();
             var protoService = UnigramContainer.Current.ResolveType<IMTProtoService>();
             var updatesService = UnigramContainer.Current.ResolveType<IUpdatesService>();
+
             cacheService.Init();
+            
             updatesService.GetCurrentUserId = () => protoService.CurrentUserId;
             updatesService.GetStateAsync = protoService.GetStateCallback;
             updatesService.GetDHConfigAsync = protoService.GetDHConfigCallback;
             updatesService.GetDifferenceAsync = protoService.GetDifferenceCallback;
+
+            // Obsolete ore what?
             //updatesService.AcceptEncryptionAsync = protoService.AcceptEncryptionCallback;
             //updatesService.SendEncryptedServiceAsync = protoService.SendEncryptedServiceCallback;
+
             updatesService.SetMessageOnTimeAsync = protoService.SetMessageOnTime;
             updatesService.UpdateChannelAsync = protoService.UpdateChannelCallback;
             updatesService.GetParticipantAsync = protoService.GetParticipantCallback;

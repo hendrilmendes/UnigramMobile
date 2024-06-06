@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Microsoft.HockeyApp;
+//using Microsoft.HockeyApp;
 using Telegram.Api.Helpers;
 using Telegram.Api.Services;
 using Telegram.Api.Services.Cache;
@@ -88,7 +88,7 @@ namespace Unigram
                 await new MessageDialog(args.Exception?.ToString() 
                     ?? string.Empty, "Unhandled exception").ShowQueuedAsync();
             };
-
+            /*
 #if !DEBUG
 
             HockeyClient.Current.Configure("7d36a4260af54125bbf6db407911ed3b",
@@ -101,6 +101,7 @@ namespace Unigram
                 });
 
 #endif
+            */
         }
 
         /////// <summary>
@@ -244,10 +245,10 @@ namespace Unigram
             ToastNotificationManager.History.Clear();
 
             //RnD
-            Execute.BeginOnThreadPool( async () =>
-            {
-                await new AppUpdateService().CheckForUpdatesAsync();
-            } );
+            //Execute.BeginOnThreadPool( async () =>
+            //{
+            //    await new AppUpdateService().CheckForUpdatesAsync();
+            //} );
 
             try
             {

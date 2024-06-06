@@ -173,7 +173,13 @@ namespace Unigram.ViewModels.Login
 
             IsLoading = true;
 
-            var response = await ProtoService.SendCodeAsync(_phoneCode + _phoneNumber, /* TODO: Verify */ null);
+            MTProtoResponse<TLAuthSentCode> response = await ProtoService.SendCodeAsync
+            (
+                _phoneCode + _phoneNumber, 
+                /* TODO: Verify */ 
+                true//null
+            );
+            
             if (response.IsSucceeded)
             {
                 var state = new LoginSentCodePage.NavigationParameters

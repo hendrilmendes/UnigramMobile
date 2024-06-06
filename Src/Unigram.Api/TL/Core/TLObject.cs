@@ -24,9 +24,11 @@ namespace Telegram.Api.TL
 
         public virtual void Write(TLBinaryWriter to) { }
 
+
         //public virtual void ReadFromCache(TLBinaryReader from) { }
 
         //public virtual void WriteToCache(TLBinaryWriter to) { }
+
 
         public byte[] ToArray()
         {

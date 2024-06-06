@@ -1,4 +1,4 @@
-# UnigramMobile 1.1
+# UnigramMobile 1.1.1-pre-pre-pre-alpha
 
 ![](Images/logo.png)
 
@@ -32,7 +32,7 @@ This is my own UnigramMobile "remake" (or RnD) for Windows 10 Mobile os.
 
 ## Tech. details
 - C# & C++ codebase
-- Win. os build 18362
+- Win. os build 19041
 - Min. Win. os bild 14393
 
 ## Main goal (point of my interest)
@@ -43,11 +43,16 @@ This is my own UnigramMobile "remake" (or RnD) for Windows 10 Mobile os.
 
 ## Status
 - More "fresh" TDLib assembled as VS Extension (not provided - DIY) and used for this project.
-- Code refactoring started (main goal is to do all code compatible with changed tdlib!)
-- Draft / Early bird / Not ready yet
+- Code refactoring started (main goal is to do all code compatible with changed tdlib!).
+- Draft / Early bird / Not ready yet.
+
+## How to build your own Unigram
+- Use VS 2022 Preview ore higher.
+- Assemble your own fresh TDLib.vsix and install it in(to) VS.
+- Open unigram.sln and try to build&test your solution.
 
 ## Known bugs
-- No SMS when you entered your phone number (on attempt to auth).
+- No SMS when you entered your phone number (on attempt to auth). 
 
 ## Wiki
 For additional information (keyboard shortcuts, other contact information, FAQ, missing features, build instructions and other stuff) you can check [Unigram wiki](https://github.com/mediaexplorer74/UnigramMobile/wiki).

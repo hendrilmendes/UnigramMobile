@@ -16,28 +16,66 @@ namespace Telegram.Api.TL.Methods.Auth
 			CurrentNumber = (1 << 0),
 		}
 
-		public bool IsAllowFlashcall { get { return Flags.HasFlag(Flag.AllowFlashcall); } set { Flags = value ? (Flags | Flag.AllowFlashcall) : (Flags & ~Flag.AllowFlashcall); } }
-		public bool HasCurrentNumber { get { return Flags.HasFlag(Flag.CurrentNumber); } set { Flags = value ? (Flags | Flag.CurrentNumber) : (Flags & ~Flag.CurrentNumber); } }
+		public bool IsAllowFlashcall 
+		{ 
+			get 
+			{ 
+				return Flags.HasFlag(Flag.AllowFlashcall); 
+			} 
+			set 
+			{ 
+				Flags = value 
+					? (Flags | Flag.AllowFlashcall) 
+					: (Flags & ~Flag.AllowFlashcall);
+			} 
+		}
+		public bool HasCurrentNumber 
+		{ 
+			get 
+			{ 
+				return Flags.HasFlag(Flag.CurrentNumber); 
+			} 
+			set 
+			{ 
+				Flags = value 
+					? (Flags | Flag.CurrentNumber) 
+					: (Flags & ~Flag.CurrentNumber); 
+			} 
+		}
 
 		public Flag Flags { get; set; }
+
 		public String PhoneNumber { get; set; }
+		
 		public Boolean? CurrentNumber { get; set; }
+		
 		public Int32 ApiId { get; set; }
+		
 		public String ApiHash { get; set; }
 
 		public TLAuthSendCode() { }
+		
 		public TLAuthSendCode(TLBinaryReader from)
 		{
 			Read(from);
 		}
 
-		public override TLType TypeId { get { return TLType.AuthSendCode; } }
+		public override TLType TypeId 
+		{ 
+			get 
+			{ 
+				return TLType.AuthSendCode; 
+			} 
+		}
 
 		public override void Read(TLBinaryReader from)
 		{
 			Flags = (Flag)from.ReadInt32();
 			PhoneNumber = from.ReadString();
-			if (HasCurrentNumber) CurrentNumber = from.ReadBoolean();
+
+			if (HasCurrentNumber) 
+				CurrentNumber = from.ReadBoolean();
+			
 			ApiId = from.ReadInt32();
 			ApiHash = from.ReadString();
 		}
@@ -47,9 +85,14 @@ namespace Telegram.Api.TL.Methods.Auth
 			UpdateFlags();
 
 			to.Write(0x86AEF0EC);
+			
 			to.Write((Int32)Flags);
+			
 			to.Write(PhoneNumber);
-			if (HasCurrentNumber) to.Write(CurrentNumber.Value);
+
+			if (HasCurrentNumber) 
+				to.Write(CurrentNumber.Value);
+			
 			to.Write(ApiId);
 			to.Write(ApiHash);
 		}
