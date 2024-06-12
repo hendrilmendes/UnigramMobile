@@ -1,10 +1,16 @@
-# Unigram Mobile project - my own RnD
+# UnigramMobile 1.1.1-pre-pre-pre-alpha
+
+![](Images/logo.png)
 
 # About
-This is my "Telegram Mobile" fork prepeared (partially) for the Windows 10 (Mobile) platform. 
+This is my own UnigramMobile "remake" (or RnD) for Windows 10 Mobile os. 
+
+## Screenshot
+
+![](Images/shot01.png)
    
 ## Features
-- Based on [TDLib](https://github.com/tdlib/td)
+- Based on more fresh [TDLib](https://github.com/tdlib/td) (Jan, 2024)
 - Secret chats
 - Instant view (now updated with the most recent 2.0)
 - Multi-account
@@ -24,6 +30,10 @@ This is my "Telegram Mobile" fork prepeared (partially) for the Windows 10 (Mobi
 - Full support of Windows 10 notifications and Action Centre (reply to a message or mark it as read without opening the app)
 - Accessibility for visually impaired people
 
+## Tech. details
+- C# & C++ codebase
+- Win. os build 19041
+- Min. Win. os bild 14393
 
 ## Main goal (point of my interest)
 - Fix some/main API changes
@@ -32,15 +42,24 @@ This is my "Telegram Mobile" fork prepeared (partially) for the Windows 10 (Mobi
 - Notif. system (Push, etc.)
 
 ## Status
-- Init state (TDLib assembled as VS Extension; see TDLib-vsix folder).
-- Code RnD started (new TDLib not compatible with obsolete Unigram deals, heh!)
+- More "fresh" TDLib assembled as VS Extension (not provided - DIY) and used for this project.
+- Code refactoring started (main goal is to do all code compatible with changed tdlib!).
+- Draft / Early bird / Not ready yet.
+
+## How to build your own Unigram
+- Use VS 2022 Preview ore higher.
+- Assemble your own fresh TDLib.vsix and install it in(to) VS.
+- Open unigram.sln and try to build&test your solution.
+
+## Known bugs
+- No SMS when you entered your phone number (on attempt to auth). 
 
 ## Wiki
-For additional information (keyboard shortcuts, other contact information, FAQ, missing features, build instructions and other stuff) you can check [Unigram wiki](https://github.com/mediaexplorer74/Unigram/wiki).
+For additional information (keyboard shortcuts, other contact information, FAQ, missing features, build instructions and other stuff) you can check [Unigram wiki](https://github.com/mediaexplorer74/UnigramMobile/wiki).
 
 ## References
-- https://github.com/UnigramDev/Unigram/
-- https://github.com/hihain/UnigramMobile/ 
+- https://github.com/UnigramDev/Unigram/ Original Unigram (UWP) for Windows 11, XBox, etc.
+- https://github.com/hihain/UnigramMobile/ Huhain's UnigramMobile "main fork"
 
 ## ..
 As is. RnD only. For educational purposes. DIY.
